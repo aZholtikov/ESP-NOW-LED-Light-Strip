@@ -7,12 +7,12 @@
 2. Прошивка может использоваться на многих лампах/LED контроллерах Tuya/SmartLife.
 3. Сохранение в памяти последнего состояния при выключении питания. Переход в последнее состояние при включении питания.
 4. При подключении к шлюзу периодическая передача своего состояния доступности (Keep Alive) и статуса (ON/OFF). 
-5. Управление осуществляется через [ESP-NOW шлюз](https://github.com/aZholtikov/ESP-NOW-MQTT_Gateway) посредством Home Assistant через MQTT брокер.
+5. Управление осуществляется через [ESP-NOW шлюз](https://github.com/aZholtikov/ESP-NOW-MQTT-Gateway) посредством Home Assistant через MQTT брокер.
   
 ## Примечание:
 
 1. Работает на основе библиотеки [ZHNetwork](https://github.com/aZholtikov/ZHNetwork) и протокола передачи данных [ZH Smart Home Protocol](https://github.com/aZholtikov/ZH-Smart-Home-Protocol).
-2. Для работы в сети необходимо наличие [ESP-NOW - MQTT Gateway](https://github.com/aZholtikov/ESP-NOW-MQTT_Gateway).
+2. Для работы в сети необходимо наличие [ESP-NOW - MQTT Gateway](https://github.com/aZholtikov/ESP-NOW-MQTT-Gateway).
 3. Для включения режима обновления прошивки необходимо послать команду "update" в корневой топик устройства (пример - "homeassistant/espnow_led/70039F44BEF7"). Устройство перейдет в режим обновления (подробности в [API](https://github.com/aZholtikov/ZHNetwork/blob/master/src/ZHNetwork.h) библиотеки [ZHNetwork](https://github.com/aZholtikov/ZHNetwork)). Аналогично для перезагрузки послать команду "restart".
 4. При возникновении вопросов/пожеланий/замечаний пишите на github@zh.com.ru
 
